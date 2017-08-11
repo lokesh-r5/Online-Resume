@@ -92,6 +92,10 @@ a {
   display: block;
 }
 
+#header img{
+  border-radius: 50%;
+}
+
 .welcome-message {
   font-style: italic;
   font-size: 18px;
@@ -175,6 +179,15 @@ span {
   text-align: center;
 }
 
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-images img {
+  height: 100%;
+  width: 45%;
+}
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
@@ -217,5 +230,11 @@ span {
   #skills-h3,
   .biopic {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .project-images img {
+    width: 100%;
   }
 }
